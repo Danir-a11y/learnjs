@@ -1,0 +1,58 @@
+p {
+    line-height: 1.6;  
+    font-family: 'arial'; 
+    font-size: 25px; 
+    color: black;
+}
+
+/* .music {
+    height: 100%;
+    width: 100%;
+} */
+
+body {
+    background-image: url('img/mystic.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px) grayscale(50%);
+    image-rendering:pixelated;
+    z-index: -1;
+}
+
+.knopka {
+
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'arial'; 
+    image-rendering: pixelated;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.knopka:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-2px);
+    font-size: 40px;
+}
+
+.div {
+    margin-top: 1.75em;
+    font-family: 'arial'; 
+    font-size: 25px; 
+    margin-bottom: 1.75em;
+}
+
+.fullscreen-gif-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/ne\ smotret.gif');
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+
+<html lang = "ru">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <title>learnjs</title>
+
+    </head>
+
+    <body>
+
+        <div>
+
+            <p>В этом html-файле я записываю то, чему научился, параллельно решая некоторые задачи.</p>
+            <p>  Update: прошло пару дней, я добавил дизайна (немного мистического, хахаха) и теперь этот файл грузится чуть подольше </p> 
+
+        </div>
+              
+        <div World>
+
+        <button class = "knopka" onmouseover="playSound()" onclick="World()">hi, world! And other things...</button>
+
+        <audio id="hoverSound">
+            <source src="/music/sound.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает элемент audio.
+        </audio>
+
+        <script>
+
+            function World() {
+
+                alert( 'Hi, world!' );
+
+                alert(3 +
+                1
+                + 2);
+
+                alert(3 + 1 + 2);
+                ['Другой метод alert'].forEach(alert);
+
+            }
+
+            function playSound() {
+                var audio = document.getElementById("hoverSound");
+                audio.play();
+            }
+
+        </script>
+
+        </div>
+
+        <div Let>
+
+        <button class = "knopka" onmouseover="playSound()" onclick="letperemennie()">let!</button>
+
+        <audio id="hoverSound">
+            <source src="/music/sound.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает элемент audio.
+        </audio>
+
+        <script>
+
+            function letperemennie() {
+
+                let message;
+                message = 'Как вам мое новое оформление? Чуть-чуть подглядел в интернете, но в основном все сам!';
+                alert(message); // Вывод моего сообщения вам
+
+                let user = "Danir", age = 18, sms = "priveeet";
+                let name;
+                name = user;
+                alert(name);
+
+                let s = 5;
+                let d = 143;
+                alert("s * d = ");
+                alert(s + d)
+
+                const KRUTO = 'Мы не можем изменить константу'
+
+            }
+
+            function playSound() {
+                var audio = document.getElementById("hoverSound");
+                audio.play();
+            }
+
+        </script>
+
+        </div>
+
+        <div type>
+
+            <button class = "knopka" onmouseover="playSound()" onclick="types()">types</button>
+
+            <audio id="hoverSound">
+                <source src="/music/sound.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает элемент audio.
+            </audio>
+
+            <script>
+
+                function types() {
+
+                    let str = "Строковый тип данных:)"
+                    alert(str)
+                    typeof 18 + " Лет ";
+                    typeof (18 + " Лет ");
+
+                    let booleantype = true;
+                    alert( booleantype );
+
+                    let result = prompt("Name", " ");
+                    let username = prompt(`your name is ${result} ? `, " ");
+                    alert(`${username}? I got you! `)
+
+                    let isBoss = confirm("Ты здесь главный?");
+                    alert( isBoss );
+
+                }
+
+                function playSound() {
+                    var audio = document.getElementById("hoverSound");
+                    audio.play();
+                }
+            </script>
+
+        </div>
+            
+        <div oper>
+
+            <button class = "knopka" onmouseover="playSound()" onclick="oper()">operatori</button>
+
+            <audio id="hoverSound">
+                <source src="/music/sound.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает элемент audio.
+            </audio>
+
+            <script>
+
+                function oper() {
+
+                    let a = 1, b = 1;
+                    alert( ++a );
+                    alert( b++ );
+                    alert( a );
+                    alert( b );
+
+                    let g = 2;
+                    let x = 1 + (a *= 2);
+                    alert(g);
+                    alert(x);
+
+                }
+                
+                function playSound() {
+                    var audio = document.getElementById("hoverSound");
+                    audio.play();
+                }
+
+            </script>
+
+        </div>
+
+        <div iff>
+
+            <button class = "knopka" onmouseover="playSound()" onclick="iff()">if</button>
+
+            <audio id="hoverSound">
+                <source src="/music/sound.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает элемент audio.
+            </audio>
+
+            <script>
+
+                function iff() {
+
+                    let name = prompt ("Какое официальное название Javascript", " ");
+
+                    if (name == "ECMAScript"){
+                        alert("Верно")
+                    }
+                    else {
+                        alert("Кажется, там было другое название , попробуй еще раз")
+                    }
+
+                    let age = prompt ("Сколько Даниру Ибрагимову лет?")
+                    if (age == 18) {
+                        alert("Да!:)")
+                    }
+                    else {
+                        alert("Нет!:(")
+                    }
+                    
+                    let message = (login == 'Сотрудник') ? 'Привет' :
+                    (login == 'Директор') ? 'Здравствуйте' :
+                    (login == '') ? 'Нет логина' :
+                    '';
+                }   
+
+                function playSound() {
+                    var audio = document.getElementById("hoverSound");
+                    audio.play();
+                }
+
+            </script>
+
+        </div>
+
+        <div poprobuyte nazhat kogda otkroete site>
+
+            <button class = "knopka" onmouseover="playSound()" onclick="sekret()">???</button>
+
+            <audio id="hoverSound">
+                <source src="/music/sound.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает элемент audio.
+            </audio>
+
+            <script>
+                
+                function secret(){
+                    
+                    let sekretik = 10000000
+                    let zachem = sekretik
+                    alert("пока не научился создавать...");
+
+                }
+
+                function playSound() {
+                    var audio = document.getElementById("hoverSound");
+                    audio.play();
+                }
+            </script>
+        
+        </div>
+
+        <div>
+            <audio id="backgroundMusic" loop>
+                <source src="music/music.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает элемент audio.
+            </audio>
+            
+            <button class="knopka" onmouseover="playSound()" onclick="playAudio()">push it</button>
+            
+            <audio id="hoverSound">
+                <source src="/music/sound.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает элемент audio.
+            </audio>
+
+            <script>
+                function playAudio() {
+                    var audio = document.getElementById('backgroundMusic');
+                    audio.play();
+                    alert("прикольно, провозился с этим два часа, кучу времени потратил, результат конечно, не такой, который я хотел, а именно на задний фон поставить звук, однако я не понимаю, как это делать")
+                }
+
+                function playSound() {
+                    var audio = document.getElementById("hoverSound");
+                    audio.play();
+                }
+            </script>
+        </div>
+
+        <div>     
+
+            <button class="knopka" onmouseover="playSound()" onclick="whilefor()">while/for</button>
+            
+            <script>
+                function whilefor() {
+                    let i = 0
+                    let a = 0
+                    let b = 0 
+                    let isBoss = confirm("Посчитаем до 10, используя while?");
+
+                    alert( isBoss );
+
+                    if (isBoss == true) {
+
+                        while (i < 11) {
+                        alert(i)
+                        i++
+                        }
+
+                    } 
+                    let wodhile = confirm("Посчитаем до 10, используя do ... while?")
+
+                    alert(wodhile);
+                    if (wodhile == true) {
+
+                        do {
+                            alert(a)
+                            a++
+                        } while (a < 11)
+                    }
+
+                    let ofr = confirm("Посчитаем до 10, используя for?")
+
+                    alert(ofr);
+                    if (ofr == true) {
+                        for (b=0; b < 11; b++){
+
+                        }
+                        
+                    }
+
+                }
+            </script>
+
+        </div>
+
+        <div>     
+
+            <button class="knopka" onmouseover="playSound()" onclick="switchs()">switch</button>
+            
+            <script>
+                function switchs() {
+                    // switch (browser) {
+                    // case 'Edge':
+                    // alert( "You've got the Edge!" );
+                    // break;
+
+                    // case 'Chrome':
+                    // case 'Firefox':
+                    // case 'Safari':
+                    // case 'Opera':
+                    // alert( 'Okay we support these browsers too' );
+                    // break;
+
+                    // default:
+                    // alert( 'We hope that this page looks ok!' );
+                    // }
+
+                    let i = prompt("What is your favorite browser?")
+
+                    if (i == "Edge") {
+                        
+                        alert("You've got the Edge!")
+
+                    }
+
+                    else {
+
+                        if (i == "Chrome" || i == "Firefox" || i == "Safari" || i == "Opera"){
+                            alert("Okay we support these browsers too")
+                        }
+
+                        alert("We hope that this page looks ok!")
+
+                    }
+                }
+            </script>
+            
+        </div>
+        <button class="knopka"  onmouseover="playSound()" onclick="functs()">functions</button>          
+        <script>
+            function functs(){            
+                function vsemprivet() {
+                    alert("Всем привет!")
+                }
+
+                let username = prompt(" Как тебя зовут? ")
+
+                function name() {
+                    alert(`Привет, ${username}`)
+                }
+
+                name()
+
+                function delitel(from, text){
+                    alert(from + ' : ' + text)
+                }
+
+                delitel('Гарик', 'Харламов')
+                delitel('Нормисы', 'Подшарили')   
+
+                function checkAge(age) {
+                    return (age > 18) ? true : confirm('Родители разрешили?');
+                }             
+
+                function checkAge(age) {
+                    return (age > 18) || confirm('Родители разрешили?');
+                }
+
+                let a = prompt("Введите a")
+                let b = prompt("Введите b")
+                c = parseInt(a)
+                d = parseInt(b)
+
+                function ab(){
+                    return (c > d) ? alert(d) : alert(c);
+                }
+                ab()
+            }
+
+            </script>
+        </div>
+        <div>
+            <button class="knopka" onmouseover="playSound()" onclick="strelka()">=>functions=></button>
+            <script>
+
+                function strelka(){
+
+                    let ask = (question, yes, no) => confirm(question) ? yes() : no();
+
+                    ask(
+                        "Вы согласны?",
+                        () => alert("Вы согласились"),
+                        () => alert("Вы отменили выполнение")
+                    );
+
+                }
+            </script>
+        </div>
+        <div>
+            <button class="knopka" onmouseover="playSound()" onclick="features()">features</button>
+            <script>
+
+                function features(){
+                    'use strict'
+                    let a = prompt("Сколько всего типов данных существует в Javascript?")
+
+                    let b = parseInt(a)
+                    
+                    let c = b
+
+                    return(b == 8) ? alert("Верно") : alert("Неверно")
+
+                    }
+      
+            </script>
+        </div>
+        <div>
+            <button class="knopka" onmouseover="playSound()" onclick="console()">console(F12)</button>
+            <script>
+                for (let i = 0; i < 5; i++) {
+                    console.log("value,", i);
+                }
+
+            </script>
+        </div>
+        <div>
+            <button class="knopka" onmouseover="playSound()" onclick="sint()">synthaxis(F12)</button>
+            <script>
+                function sint(){
+                    // function pow(x,n)
+                    // {
+                    //     let result=1;
+                    //     for(let i=0;i<n;i++) {result*=x;}
+                    //     return result;
+                    // }
+
+                    // let x=prompt("x?",''), n=prompt("n?",'')
+                    // if (n<=0)
+                    // {
+                    //     alert(`Степень ${n} не поддерживается, введите целую степень, большую 0`);
+                    // }
+                    // else
+                    // {
+                    //     alert(pow(x,n))
+                    // }
+                    // начинаем исправление синтаксиса
+                    function pow(x, n) {
+                        let result = 1;
+                        for (let i = 0; i < n; i++) {
+                            result *= x;
+                        }
+                        return result;
+                    }
+
+                    let x = prompt("x?", '');
+                    let n = prompt("n?", '');
+
+                    if (n <= 0) {
+                        alert(`Степень ${n} не поддерживается, 
+                        введите целую степень, большую 0`);
+                    } else {
+                        alert( pow(x,n) )
+                    }
+
+                }
+
+            </script>
+        </div>
+        <div>
+            <button class="knopka" onmouseover="playSound()" onclick="objects()">objects</button>
+            <script>
+                function objects(){
+                    user = {
+                        name: "John",
+                        surname: "Smith"                        
+                    }
+                    user.name = "Pete";
+                    delete user.name;
+
+
+                    function isEmpty(obj) {
+                        for (let key in obj) {
+                            return false;
+                        }
+                        return true;
+                    }
+
+
+                    let salaries = {
+                        John: 100,
+                        Ann: 160,
+                        Pete: 130
+                    }
+
+                    let sum = 0;
+                    for (let key in salaries){
+                        sum += salaries[key];
+                    }
+                    
+                    alert(sum)
+                }
+
+            </script>
+        </div>
+
+        <div>
+            <button class="knopka" onmouseover="playSound()" onclick="objectss()">objects</button>
+            <script>
+
+                function objectss(){
+
+                    alert("Зайди в консоль, чтобы понять что я сделал (F12)")
+
+                    let user = { name: "John", surname: "Smith" }
+                    user.name = "Pete"
+                    delete user.name
+
+                    function isEmpty(){
+                        for(let key in obj){
+                            return false;
+                        }
+                        return true;
+                    }
+
+                    let salaries = {
+                        John: 100,
+                        Ann: 160,
+                        Pete: 130
+                    }
+
+                    let sum = salaries.John + salaries.Ann + salaries.Pete
+
+                    if (sum == NaN) {
+                        alert(0)
+                    } else {
+                        alert(sum)
+                    }
+
+                    function multiplyNumeris(obj) {
+                        for (let key in obj) {
+                            if (typeof obj[key] == 'number') {
+                                obj[key] *= 2;
+                            }
+                            
+                        }
+                    }
+                    // до вызова функции
+                    let menu = {
+                    width: 200,
+                    height: 300,
+                    title: "My menu"
+                    };
+
+                    multiplyNumeric(menu);
+
+                    // после вызова функции
+                    for (let prop in menu) {
+                        alert(prop)
+                        alert(prop[menu])
+                    }
+
+                }
+            </script>
+        </div>
+
+        <div>
+            <button class="knopka" onmouseover="playSound()" onclick="thiss()">this</button>
+            <script>
+
+                function thiss(){
+
+                    function makeUser() {
+                        return {
+                            name: "John",
+                            ref: this
+                        };
+                        }
+
+                    let user = makeUser();
+
+                    alert( user.ref.name ); 
+
+                    let calculator = {
+                        sum() {
+                            return this.a + this.b;
+                        },
+
+                        mul() {
+                            return this.a * this.b;
+                        },
+                        read() {
+                            this.a = +prompt('a?', 0);
+                            this.b = +prompt('b?', 0);
+                        }
+                    };
+
+                    calculator.read();
+                    alert( calculator.sum() );
+                    alert( calculator.mul() );
+
+                }
+            </script>
+        </div>
+        
+        <div>
+            <button class="knopka" onmouseover="playSound()" onclick="neww()">neww</button>
+            <script>
+
+                function neww(){
+
+                    let obj = {}
+
+                    function A() {
+                            return obj;
+                        }
+                    function B() {
+                            return obj;
+                        }
+
+                    let a = new A();
+                    let b = new B();
+
+                    alert( a == b ); // true
+
+                    function Calculator() {
+
+                        this.sum = function sum() {
+                            return this.a + this.b;
+                        };
+
+                        this.mul = function mul() {
+                            return this.a * this.b;
+                        };
+
+                        this.read = function read() {
+                            this.a = +prompt("a?", 0);
+                            this.b = +prompt("b?", 0);
+
+                        };
+
+
+                    }
+
+                    let calculator = new Calculator();
+                    
+                    calculator.read();
+
+                    alert( "Sum=" + calculator.sum() );
+                    alert( "Mul=" + calculator.mul() );
+
+                    function Accumulator() {
+                        this.value = startingValue;
+
+                        this.read = function read() {
+                            this.value += +prompt("value", 0)
+                        }
+                    }
+
+                    let accumulator = new Accumulator(1); 
+
+                    accumulator.read(); 
+                    accumulator.read(); 
+
+                    alert(accumulator.value); 
+                }
+            </script>
+        </div>
+
+        <div>
+            <button class="knopka" onmouseover="playSound()" onclick="nomera()">nomerr</button>
+            <script>
+
+                function nomera(){
+                    function readNumber() {
+                        let num;
+
+                        do {
+                            num = prompt("Введите число", 0);
+                        } while ( !isFinite(num) );
+
+                        if (num === null || num === '') return null;
+
+                        return +num;
+                    }
+                    
+                    alert(`Число: ${readNumber()}`)
+
+                    let i = 0;
+                    while (i != 10) {
+                    i += 0.2;
+                    }
+                }
+            </script>
+        </div>
+        
+        <div>
+            <button class="knopka" onmouseover="playSound()" onclick="stroki()">str</button>
+            <script>
+
+                function stroki(){
+                    function ucFirst(){
+
+                        let a = prompt("Введите ваше имя", " ");
+                        let b = a;
+                        if (a[0] = " ") {
+                            alert(a[1].toUpperCase() + b.slice(2));
+                            return;
+                        } else if (a[0] != " "){
+                            alert(a[0].toUpperCase() + b.slice(1));
+                            return;
+                        }
+                    }
+
+                    ucFirst();
+
+                    function checkSpam(){
+                        let spam = prompt("Проверка на спам, напишите, что вы хотите отправить");
+                        if (spam.toLowerCase().includes("viagra")) {
+                            alert("SPAM");
+                            return;
+                        } else if (spam.toLowerCase().includes("xxx")) {
+                            alert("SPAM");
+                            return;
+                        } else {
+                            alert("Отправлено!")
+                        }
+
+                    }
+                    checkSpam();
+
+                    function truncate() {
+                        let str = prompt("Введите строку");
+                        let mxl = prompt("Введите макс кол-во символов на предложение");
+                        mxl = parseInt(mxl);
+                        if (str.length > mxl) {
+                            alert(str.slice(0, mxl - 3) + "...");
+                            return;
+                        } else {
+                            alert(str)
+                        }
+                    }
+                    truncate()
+
+                    function extractCurrencyValue() {
+                        let valuta = prompt("Выберите валюту \n1.Dollars ($) \n2.Ruble (₽) \n3. Euro (€) \nНапишите, пожалуйста, число", ' ');
+                        let ext = prompt("Напишите стоимость");
+
+                        if (valuta.includes("1")) {
+                            valuta = "$"
+                            return;
+                        } else if (valuta.includes("2")) {
+                            valuta = "₽"
+                            return;
+                        } else if (valuta.includes("3")) {
+                            valuta = "€"
+                            return;
+                        }
+
+                        alert(`Цена: ${valuta + ext}`);
+
+                        ext = parseInt(ext);
+                    }
+                    extractCurrencyValue()
+                }
+            </script>
+        </div>
+    </body>
+
+</html>
